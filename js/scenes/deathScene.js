@@ -19,6 +19,7 @@ class defeatScene extends Phaser.Scene {
         quitButton.setInteractive();
         quitButton.on('pointerdown', () => {
             defeatMusic.stop()
+            health = 10;
             enemies_left = 5;
             status = false;
             this.scene.start("mainMenu");
